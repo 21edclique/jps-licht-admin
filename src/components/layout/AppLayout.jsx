@@ -6,6 +6,7 @@ import {
   Moon, Sun, LogOut, Menu, X, Droplets, ChevronRight
 } from 'lucide-react'
 import { useState } from 'react'
+import logoSrc from '@/assets/JPSLichtLOGO.png'
 
 const NAV = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard', color: 'text-blue-400' },
@@ -44,7 +45,7 @@ export const AppLayout = ({ children }) => {
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600" />
         {/*logo */}
         <div className="relative flex flex-col items-center px-5 py-6">
-          <img src="/src/assets/JPSLichtLOGO.png" alt="JPS Licht" className="h-40 w-40 object-contain drop-shadow-lg" />
+          <img src={logoSrc} alt="JPS Licht" className="h-40 w-40 object-contain drop-shadow-lg" />
           <div className="mt-3 text-center">
             {/* <p className="text-base font-bold text-white leading-none tracking-wide">JPS Licht</p> */}
             {/* <p className="text-[10px] text-blue-400/70 mt-1 uppercase tracking-widest">Admin Panel</p> */}
@@ -166,7 +167,7 @@ export const AppLayout = ({ children }) => {
           </button>
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg overflow-hidden bg-white flex items-center justify-center">
-              <img src="/src/assets/JPSLichtLOGO.png" alt="JPS Licht" className="h-8 w-8 object-contain" />
+              <img src={logoSrc} alt="JPS Licht" className="h-8 w-8 object-contain" />
             </div>
             <span className="text-sm font-bold">JPS Licht</span>
           </div>
